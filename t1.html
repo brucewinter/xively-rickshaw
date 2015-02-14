@@ -60,7 +60,7 @@ h2>
 <script>
 
 // Set your API key first  
-xively.setKey( "QjgNPVyfrL8mq0ulvTk69cfkY0RPTVE8SWEA6Jr7SnjdfOBY" );  
+xively.setKey( "C3Fsyg875-Wkk4_r9lWbvG8g6mKSAKxwbVF3Nkt6cDNMQT0g" );  
 
 var startOfYesterday = moment().subtract("day", 1).startOf('day');
 var endOfYesterday = moment().subtract("hour", 3).startOf('day');
@@ -75,7 +75,7 @@ var query = {
   limit: 1000,
 };
 
-xively.datastream.history( "62472", "power", query, loadData);  
+xively.datastream.history( "1385833385", "yun1", query, loadData);  
 
 function loadData(data) {  
   var unit = data.unit.label;
